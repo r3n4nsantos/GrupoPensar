@@ -1,0 +1,339 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:  #95989a;
+	font-style: normal;
+	text-align: left;
+	letter-spacing: 0em;	
+}
+
+header {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	color: #00416d;
+	border: 1px solid #00416d ; 
+	width: 116px;
+	height: 30px;
+	background-color: #fff;
+	margin: 20px;
+}
+
+h2 { 
+	font-size: 1.61em; 
+	margin: 0;
+}
+
+h3 { 
+	font-size: 1.30em;
+	margin: 0;
+}
+
+p { 
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.seção {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home {
+	flex-direction: row;
+}
+
+.home-imagem-logo {
+	width: 60%;
+	margin-left: 5%
+}
+
+.home-descricao {
+	width: 20%;
+	height: 40%;
+	font-size: 0.94em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	letter-spacing: 0em;
+}
+
+.sobre {
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-items: center;
+	background: url("Assets/Público_Sarau do Alemao_Foto Marcus Menezes.jpg") ;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 5%
+}
+
+.sobre-descrição {
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid #00416d;
+    background-color: #fff;
+    width: 40%;
+    height: 70%;
+    padding: 1.25em;
+	color: #95989a;
+}
+
+@media screen and (max-width: 1024px){
+	.sobre-descrição {
+		width: 	65%
+	}
+}
+
+.ações {
+	flex-direction: row;
+	flex-wrap: wrap;	
+	margin-top: 2.5%;
+}
+
+.ações-sarau {
+	flex-direction: row;
+}
+
+.ações h2 {
+	align-self: flex-start;
+}
+
+.ações-sarau-descrição {
+	align-self: flex-start;
+	width: 30%;
+	height: 60%;
+	margin: auto;
+}
+
+video {
+	width: 50%;
+}
+
+.ações-pensarcine-favela {
+	display: flex;
+	justify-content: center;
+	padding: 4%;
+	width: 100%;
+	
+}
+
+.ações-pensarcine {
+
+	width: 35%;
+	height: 40%;
+	margin-left: 2%;
+	padding: 1%;
+}
+
+.ações-pensarcine-imagem {
+	width: 100%;
+}
+
+.ações-favela {
+	width: 35%;
+	height: 40%;
+	margin-left: 2%;
+	padding: 1%;
+}
+
+.ações-favela-imagem {
+	width: 100%;
+}
+
+.contato {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background: url("Sarau do Alemao Fundo.jpg") center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+.bloco-contato {
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid #00416d;
+    background-color: #fff;
+    min-width: 25%;
+    min-height: 30%;
+    padding: 1%;
+    margin: 5%;
+}
+
+.bloco-contato p {
+	line-height: 1.07em;
+}
+
+.contato-resdesocial-doações {
+	display: flex;
+	flex-direction: row;
+}
+
+.icone-rede-social {
+	width: 50px;
+}
+
+.contato-doações-lista {
+	display: flex;
+	flex-direction: column;
+}
+
+.contato-doações-lista-item {
+	list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.home {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.home-imagem-logo {
+		width: 100%;
+		margin-left: 0%
+	}
+
+	.home-descricao {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	nav li {
+		margin: 5px;
+		width: 70px;
+		height: 25px;
+	}
+
+	.resposivo-tela-media {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.sobre {
+		padding: 2%
+	}
+
+	.sobre-descrição {
+		height: 96%;
+		width: 90%;
+	}
+
+	.ações-sarau-descrição {
+		width: 80%;
+		align-self: center;
+		margin-bottom: 4%;
+	}
+
+	video {
+		width: 100%;
+		align-self: center;
+	}
+
+	.ações-pensarcine-favela {
+		padding: 0%
+	}
+
+	.ações-pensarcine {
+		width: 100%;
+		align-self: center;
+		margin: 2%;
+		margin-top: 5%;
+	}
+
+	.ações-pensarcine h3 {
+		width: 96%;
+		align-self: center;
+		margin: 2%;
+	}
+
+	.ações-pensarcine p {
+		width: 80%;
+		align-self: center;
+		margin: 3% auto;
+	}
+
+	.ações-favela {
+		width: 100%;
+		align-self: center;
+		margin: 2%;
+	}
+
+	.ações-favela h3 {
+		width: 96%;
+		align-self: center;
+		margin: 2%;
+	}
+
+	.ações-favela p {
+		width: 80%;
+		align-self: center;
+		margin: 3% auto;
+	}
+
+	.contato {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contato-resdesocial-doações {
+		flex-direction: column;
+	}
+
+	.contato-resdesocial {
+		display: flex;		
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.icone-rede-social {
+		width: 50%;
+		margin-left: 25%;
+	}
+}
+
+@media (max-width: 300px) {
+	nav li {
+		margin: 1px;
+		width: 56px;
+		height: 23px;
+	}
+}
