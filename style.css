@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:  #95989a;
+	font-style: normal;
+	text-align: left;
+	letter-spacing: 0em;	
+}
+
+header {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	color: #00416d;
+	border: 1px solid #00416d ; 
+	width: 116px;
+	height: 30px;
+	background-color: #fff;
+	margin: 20px;
+}
+
+h2 { 
+	font-size: 1.61em; 
+	margin: 0;
+}
+
+h3 { 
+	font-size: 1.30em;
+	margin: 0;
+}
+
+p { 
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.seção {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home {
+	flex-direction: row;
+}
+
+.home-imagem-logo {
+	width: 60%;
+	margin-left: 5%
+}
+
+.home-descricao {
+	width: 20%;
+	height: 40%;
+	font-size: 0.94em;
+	color: #95989a;
+	font-style: normal;
+	text-align: left;
+	letter-spacing: 0em;
+}
+
+.sobre {
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	align-items: center;
+	background: url("Assets/Público_Sarau do Alemao_Foto Marcus Menezes.jpg") ;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 5%
+}
+@media screen and (max-width: 1000px) {
+
+	.home {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.home-imagem-logo {
+		width: 100%;
+		margin-left: 0%
+	}
+
+	.home-descricao {
+		width: 60%;
+		margin-bottom: 5%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	nav li {
+		margin: 5px;
+		width: 70px;
+		height: 25px;
+	}
+
+	.resposivo-tela-media {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.sobre {
+		padding: 2%
+	}
+
+	.sobre-descrição {
+		height: 96%;
+		width: 90%;
+	}
+}	
+
+.sobre-descrição {
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid #00416d;
+    background-color: #fff;
+    width: 40%;
+    height: 70%;
+    padding: 1.25em;
+	color: #95989a;
+}
+
+@media screen and (max-width: 1024px){
+	.sobre-descrição {
+		width: 	65%
+	}
+}
